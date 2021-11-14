@@ -1,1 +1,1 @@
-# HARD PROBLEMS - Code mẫu và giải thích
+# Hard Problems - Code mẫu và giải thích
