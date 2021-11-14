@@ -1,2 +1,2 @@
-# Thang-Long-University---Algorithm
+# Thang Long University - Algorithm
 TLA - Exercise Explanation
