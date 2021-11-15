@@ -1,5 +1,28 @@
 # Easy Problems - Code mẫu và giải thích
 
+## [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)
+### **Tóm tắt đề:**
+- Cho 1 số nguyên, trả về True nếu số đó là số palindrome; False nếu không phải số palindrome.
+- Số palindrome là số khi viết ngược lại thì được số bằng chính số ban đầu.
+
+### **Ví dụ:**
+  - Số Palindrome: 12321 ; 1551 ; 11211 ; 1111 ;...
+  - Số không phải Palindrome: -121 (ngược lại là 121- ); 1432 ; 1010 ; ...
+
+### ***Hướng dẫn giải:**
+ #### ***Cách 1: Sử dụng string:***
+  1. Chuyển số về dạng chuỗi bằng: *string <tên> = to_string(<số>)*
+  2. Đảo các kí tự và lưu vào chuỗi mới.
+  3. So sánh 2 chuỗi, nếu giống thì trả về True, khác thì trả về False.
+  #### ***Cách 2: Tạo số mới:***
+  1. Tạo 2 số nguyên mới, số thứ nhất bằng số đã cho, số thứ 2 là số sau khi đảo.
+  2. Số thứ nhất chia 10 lấy phần dư và lấy phần nguyên.
+  3. Số thứ nhất gán bằng phần nguyên.
+  4. Số thứ 2 sẽ nhân với 10 và cộng thêm phần dư.
+  5. Lặp lại bước 2 đến khi số thứ nhất nhỏ hơn 1.
+  6. So sánh số thứ 2 và số đã cho ban đầu. Bằng nhau trả về True, khác nhau thì trả về False.
+
+
 ## [13. Roman to Integer](https://github.com/toan207/TLU-Algorithm/tree/main/Leetcode/Easy/Code)
 **Tóm tắt đề:** Nhập một số La Mã dưới dạng chuỗi(string), chuyển đổi số đó thành số nguyên(int). Biết các chữ số La Mã có giá trị tương ứng như sau:<br>
 |Roman|I|V|X|L|C|D|M|
