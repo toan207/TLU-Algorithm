@@ -1,6 +1,6 @@
 # Easy Problems - Code mẫu và giải thích
 
-## [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)
+## [9. Palindrome Number](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/9_PalindromeNumber.cpp)
 ### **Tóm tắt đề:**
 - Cho 1 số nguyên, trả về True nếu số đó là số palindrome; False nếu không phải số palindrome.
 - Số palindrome là số khi viết ngược lại thì được số bằng chính số ban đầu.
