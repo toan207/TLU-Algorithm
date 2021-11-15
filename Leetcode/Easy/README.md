@@ -9,7 +9,7 @@
   - Số Palindrome: 12321 ; 1551 ; 11211 ; 1111 ;...
   - Số không phải Palindrome: -121 (ngược lại là 121- ); 1432 ; 1010 ; ...
 
-### ***Hướng dẫn giải:**
+### **Hướng dẫn giải:**
  #### ***Cách 1: Sử dụng string:***
   1. Chuyển số về dạng chuỗi bằng: *string <tên> = to_string(<số>)*
   2. Đảo các kí tự và lưu vào chuỗi mới.
