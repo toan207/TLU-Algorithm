@@ -57,6 +57,33 @@
 - Khi xét hết chuỗi đầu vào, ta còn 2 trường hợp cuối cùng để đưa ra kết luận:
   - Nếu `Stack` rỗng tức là sau khi xét hết chuỗi, ta không còn ngoặc mở nào thừa thì ta sẽ trả về **true**.
   - Nếu `Stack` còn ngoặc mở, tức là sau khi xét hết chuỗi, ta vẫn còn dư các ngoặc mở mà không có ngoặc đóng thì ta sẽ trả về **false**.
+
+## **693. Binary Number with Alternating Bits**
+
+**Tóm tắt đề:** Cho một số nguyên dương, kiểm tra xem khi số đó được biểu diễn dưới dạng nhị phân thì nó có các bit xen kẽ hay không (nếu 2 bit liền nhau phải có giá trị khác nhau)
+
+**Ví dụ:** 
+- n = 5
+-> true
+(5 Khi biểu diễn dưới dạng nhị phân: 101)
+- n = 7
+-> false
+(7 Khi biểu diễn dưới dạng nhị phân: 111)
+
+**Hướng dẫn giải:**  
+- Tạo 1 xâu `S` để biểu diễn số n dưới dạng nhị phân
+- Bắt đầu 1 vòng lặp để kiểm tra các phần tử trong xâu `S`:
+  - nếu có 2 phần tử liền nhau giống nhau => trả về `false` và dừng vòng lặp
+  - Ngược lại, nếu không có 2 phần tử nào liền nhau giống nhau => trả về `true`
+
+- Để tối ưu hơn (để nộp bài không bị Time Limit Exceeded), ta chuyển số đó thành dạng nhị phân và kiểm tra tính xen kẽ cùng lúc:
+  - Tạo biến `t1` để lưu số dư của `n/2`
+  - Chia `n` cho 2
+  - Tạo biến `t2` để lưu số dư của `n/2` (`n` sau bước 2 đã thay đổi)
+  - Nếu `t1`==`t2`, ngay lập tức trả về `false` và kết thúc vòng lặp
+  - Ngược lại, lặp lại các bước trên (đến khi `n`=0)
+  - Nếu vòng lặp kết thúc khi `n`=0 và `t1` không bằng `t2` thì trả về `true`
+
 ## [1822. Sign of the Product of an Array](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1882_SignOfTheProductOfAnArray.cpp)
 **Tóm tắt đề**:
 - Nhập vào một dãy số rồi tính tích của tất cả các số gọi là X
