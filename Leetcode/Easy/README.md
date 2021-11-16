@@ -58,7 +58,7 @@
   - Nếu `Stack` rỗng tức là sau khi xét hết chuỗi, ta không còn ngoặc mở nào thừa thì ta sẽ trả về **true**.
   - Nếu `Stack` còn ngoặc mở, tức là sau khi xét hết chuỗi, ta vẫn còn dư các ngoặc mở mà không có ngoặc đóng thì ta sẽ trả về **false**.
 
-## **693. Binary Number with Alternating Bits**
+## [693. Binary Number with Alternating Bits](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/693_BinaryNumberwithAlternatingBits.cpp)
 
 **Tóm tắt đề:** Cho một số nguyên dương, kiểm tra xem khi số đó được biểu diễn dưới dạng nhị phân thì nó có các bit xen kẽ hay không (nếu 2 bit liền nhau phải có giá trị khác nhau)
 
