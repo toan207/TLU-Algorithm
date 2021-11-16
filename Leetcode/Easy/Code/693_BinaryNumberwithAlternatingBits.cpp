@@ -3,7 +3,7 @@ bool hasAlternatingBits(int n) {
         int t1=n%2;
         n=(n/2);
         int t2=n%2;
-        if(t2==t1){return false;break;}
+        if(t2==t1) return false;
     }
     return true;
 }
