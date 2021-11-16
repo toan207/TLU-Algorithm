@@ -42,7 +42,7 @@ Nên các bạn phải chú ý các giá trị nhập vô mảng ( ͡° ͜ʖ ͡�
   6. So sánh số thứ 2 và số đã cho ban đầu. Bằng nhau trả về True, khác nhau thì trả về False.  
   
   
-## [13. Roman to Integer](https://github.com/toan207/TLU-Algorithm/tree/main/Leetcode/Easy/Code)
+## [13. Roman to Integer](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/13_RomanToInteger.cpp)
 **Tóm tắt đề:** Nhập một số La Mã dưới dạng chuỗi(string), chuyển đổi số đó thành số nguyên(int). Biết các chữ số La Mã có giá trị tương ứng như sau:<br>
 |Roman|I|V|X|L|C|D|M|
 |-|-|-|-|-|-|-|-|
