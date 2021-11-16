@@ -57,3 +57,20 @@
 - Khi xét hết chuỗi đầu vào, ta còn 2 trường hợp cuối cùng để đưa ra kết luận:
   - Nếu `Stack` rỗng tức là sau khi xét hết chuỗi, ta không còn ngoặc mở nào thừa thì ta sẽ trả về **true**.
   - Nếu `Stack` còn ngoặc mở, tức là sau khi xét hết chuỗi, ta vẫn còn dư các ngoặc mở mà không có ngoặc đóng thì ta sẽ trả về **false**.
+## [1822. Sign of the Product of an Array](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1882_SignOfTheProductOfAnArray.cpp)
+**Tóm tắt đề**:
+- Nhập vào một dãy số rồi tính tích của tất cả các số gọi là X
+- Nếu X dương thì in ra 1
+- Nếu X âm thì in ra -1
+- Nếu X bằng 0 thì in ra 0
+
+
+**Hướng dẫn giải:** 
+* Cách 1:
+  - Khai báo X là tích của các số trong mảng (lưu ý kiểu dữ liệu)
+  - Dùng vòng lặp để tính X
+  - Dùng câu lệnh rẽ nhánh để kiểm tra X rồi dung return để trả về kết quả
+* Cách 2:
+  - Khai báo biến count để đếm số âm và biến count1 để đếm số chữ số 0 
+  - Dùng vòng lặp để đếm số âm và số 0
+  - Dùng câu lệnh rẽ nhánh để kiểm tra và trả về kết quá 
