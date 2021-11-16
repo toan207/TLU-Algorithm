@@ -58,6 +58,30 @@
   - Nếu `Stack` rỗng tức là sau khi xét hết chuỗi, ta không còn ngoặc mở nào thừa thì ta sẽ trả về **true**.
   - Nếu `Stack` còn ngoặc mở, tức là sau khi xét hết chuỗi, ta vẫn còn dư các ngoặc mở mà không có ngoặc đóng thì ta sẽ trả về **false**.
 
+
+## [69.Sqrt(x)](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/69_Sqrt.cpp)
+
+### **Tóm tắt đề:**
+*	Cho một số nguyên không âm x, hãy tính và trả về căn bậc hai của x.
+*	Kiểu trả về là số nguyên nên các chữ số thập phân bị cắt bớt và chỉ phần nguyên của kết quả được trả về.
+*	Lưu ý: Bạn không được phép sử dụng bất kỳ hàm số mũ hoặc toán tử tích hợp nào, chẳng hạn như pow (x, 0.5) hoặc x ** 0.5
+
+### **Ví dụ:**
+VD1:
+*	Input: x = 4
+*	Output: 2
+
+VD2:
+*	Input: x = 8
+*	Output: 2
+*	Giải thích: Căn của 8 là 2.82842…; do chỉ lấy phần nguyên (cắt bỏ phần thập phân), nên trả về kết quả là 2.
+
+### **Hướng dẫn giải:**
+1.	Gán biến `sqrt_v`=1.
+2.	Nếu `x`=0 trả ra 0; còn nếu `x`!=0 thực hiện bước 3
+3.	Dùng vòng lặp để tìm giá trị `i` thỏa mãn `i`*`i` > x.
+4.	Nếu thỏa mãn bươc 3, ta gán biến `sqrt_v`= `i` - 1;  kết thúc vòng lặp và trả ra giá trị `sqrt_v`.
+
 ## [693. Binary Number with Alternating Bits](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/693_BinaryNumberwithAlternatingBits.cpp)
 
 **Tóm tắt đề:** Cho một số nguyên dương, kiểm tra xem khi số đó được biểu diễn dưới dạng nhị phân thì nó có các bit xen kẽ hay không (nếu 2 bit liền nhau phải có giá trị khác nhau)
