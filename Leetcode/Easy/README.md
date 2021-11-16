@@ -20,7 +20,7 @@
   3. Số thứ nhất gán bằng phần nguyên.
   4. Số thứ 2 sẽ nhân với 10 và cộng thêm phần dư.
   5. Lặp lại bước 2 đến khi số thứ nhất nhỏ hơn 1.
-  6. So sánh số thứ 2 và số đã cho ban đầu. Bằng nhau trả về True, khác nhau thì trả về False.
+  6. So sánh số thứ 2 và số đã cho ban đầu. Bằng nhau trả về True, khác nhau thì trả về False.  
 
 
 ## [13. Roman to Integer](https://github.com/toan207/TLU-Algorithm/tree/main/Leetcode/Easy/Code)
@@ -39,7 +39,7 @@
 - Duyệt qua từng kí tự trong chuỗi số La Mã:
   - Nếu giá trị nguyên tương ứng(GTNTU) của kì tự đứng trước lớn hơn hoặc GTNTU của kí tự đứng sau thì cộng GTNTU của kí tự trước vào biến `answer`
   - Nếu giá trị nguyên tương ứng(GTNTU) của kì tự đứng trước nhỏ hơn chữ số đứng sau thì cộng (GTNTU của kí tự sau trừ GTNTU của kí tự trước) vào biến `answer`(lưu ý trường hợp này đã duyệt qua 2 kí tự, cần phải tăng chỉ số duyệt thêm 1)
-- Trả về biến `answer` là số nguyên sau khi chuyển đổi
+- Trả về biến `answer` là số nguyên sau khi chuyển đổi  
 
 
 ## [20. Valid Parentheses](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/20_ValidParentheses.cpp)
