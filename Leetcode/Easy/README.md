@@ -1,5 +1,24 @@
 # Easy Problems - Code mẫu và giải thích
 
+## [1. Two Sum]( https://leetcode.com/problems/two-sum/)
+### **Tóm tắt đề:**
+- Cho 1 mảng các số nguyên {n_1,n_2,n_3,n_4,….,n_x} và 1 số nguyên bất kì n_z.
+- Nếu tồn tại 2 số nguyên thuộc mảng các số nguyên nêu trên có tổng bằng n_z thì in ra vị trí của 2 số nguyên đó, ngược lại không in ra gì sất.
+- Nếu có tồn tại 2 số có tổng bằng n_z thì đó phải là cặp số duy nhất tồn tại trong mảng và không có cặp thứ 2 và phải chắc chắn rằng mỗi giá trị chỉ xuất hiện 1 lần.
+### **Ví dụ**
+- Mảng {4, 5, 6, 7, 8, 2, 1}
+- n_z=11 => in ra   [1,2] và [0,3]  (loại vì sai yêu cầu đề bài)
+-n_z=3 => in ra [5,6] (thảo mãn đề bài)
+Nên các bạn phải chú ý các giá trị nhập vô mảng ( ͡° ͜ʖ ͡°).
+### **Hướng dẫn giải:**
+#### ***Sử dụng vector và for***
+1. Tạo 1 vector "nums" chứa x phần tử và 1 vector "v" rỗng.
+2. Duyệt  "i" từ phần tử thứ nhất đến phần tử gần cuối (thứ 2 từ dưới lên trên).
+         - Duyệt "k = i + 1" đến phần tử cuối.
+3. Nếu v[i] + v[k] = target thì truyền  "i" và "k" vào vector "v".
+4. Sau đó in ra cặp 1 thuộc vector "v".
+
+
 ## [9. Palindrome Number](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/9_PalindromeNumber.cpp)
 ### **Tóm tắt đề:**
 - Cho 1 số nguyên, trả về True nếu số đó là số palindrome; False nếu không phải số palindrome.
