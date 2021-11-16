@@ -1,6 +1,6 @@
 # Easy Problems - Code mẫu và giải thích
 
-## [1. Two Sum]( https://leetcode.com/problems/two-sum/)
+## [1. Two Sum](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1_TwoSum.cpp)
 ### **Tóm tắt đề:**
 - Cho 1 mảng các số nguyên {n_1,n_2,n_3,n_4,….,n_x} và 1 số nguyên bất kì n_z.
 - Nếu tồn tại 2 số nguyên thuộc mảng các số nguyên nêu trên có tổng bằng n_z thì in ra vị trí của 2 số nguyên đó, ngược lại không in ra gì sất.
