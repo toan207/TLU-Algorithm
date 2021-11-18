@@ -8,7 +8,7 @@
 ### **Ví dụ**
 - Mảng {4, 5, 6, 7, 8, 2, 1}
 - n_z=11 => in ra   [1,2] và [0,3]  (loại vì sai yêu cầu đề bài)
--n_z=3 => in ra [5,6] (thảo mãn đề bài)
+-n_z=3 => in ra [5,6] (thỏa mãn đề bài)
 Nên các bạn phải chú ý các giá trị nhập vô mảng ( ͡° ͜ʖ ͡°).
 ### **Hướng dẫn giải:**
 #### ***Sử dụng vector và for***
