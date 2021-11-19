@@ -101,7 +101,7 @@ VD2:
 3.	Dùng vòng lặp để tìm giá trị `i` thỏa mãn `i`*`i` > x.
 4.	Nếu thỏa mãn bươc 3, ta gán biến `sqrt_v`= `i` - 1;  kết thúc vòng lặp và trả ra giá trị `sqrt_v`.
 
-### [389. Find the Diffirence]()
+## [389. Find the Diffirence](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/389_FindTheDiffirence.cpp)
 **Tóm tắt đề:**
 Cho 2 xâu s và t, xâu t được xây dựng bằng cách xáo trộn các ký tự
 trong s rồi thêm 1 ký tự khác. Tìm ký tự được thêm.
