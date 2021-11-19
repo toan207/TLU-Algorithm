@@ -101,6 +101,17 @@ VD2:
 3.	Dùng vòng lặp để tìm giá trị `i` thỏa mãn `i`*`i` > x.
 4.	Nếu thỏa mãn bươc 3, ta gán biến `sqrt_v`= `i` - 1;  kết thúc vòng lặp và trả ra giá trị `sqrt_v`.
 
+### [389. Find the Diffirence]()
+**Tóm tắt đề:**
+Cho 2 xâu s và t, xâu t được xây dựng bằng cách xáo trộn các ký tự
+trong s rồi thêm 1 ký tự khác. Tìm ký tự được thêm.
+
+**Hướng dẫn giải:**
+- Tạo 1 `map<char,int>` để lưu số lượng các ký tự (vd map['a'] == 5 ... )
+- Duyệt xâu t, tăng `map[t[i]]`;
+- Duyệt xâu s, giảm `map[s[i]]`;
+- Duyệt map, `nếu map[c] != 0` thì `c` là ký tự cần tìm
+
 ## [693. Binary Number with Alternating Bits](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/693_BinaryNumberwithAlternatingBits.cpp)
 
 **Tóm tắt đề:** Cho một số nguyên dương, kiểm tra xem khi số đó được biểu diễn dưới dạng nhị phân thì nó có các bit xen kẽ hay không (nếu 2 bit liền nhau phải có giá trị khác nhau)
