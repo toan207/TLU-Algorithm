@@ -46,9 +46,12 @@ Cho hai số nguyên x và y, trả về khoảng cách `Hamming` giữa chúng.
 
 **Ví dụ:**
 
-|1|0|0|0|1| 
-|4|0|1|0|0| 
-| | |↑| |↑|
+|int|binary|
+|-|-|
+|1| 0 0 0 1|
+|4| 0 1 0 0|
+| | = ↑ = ↑|
+
 Vậy khoảng cách `Hamming` là 2.
 
 **Hướng dẫn giải:**
