@@ -101,6 +101,20 @@ VD2:
 3.	Dùng vòng lặp để tìm giá trị `i` thỏa mãn `i`*`i` > x.
 4.	Nếu thỏa mãn bươc 3, ta gán biến `sqrt_v`= `i` - 1;  kết thúc vòng lặp và trả ra giá trị `sqrt_v`.
 
+
+## [258. Add Digits](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/258_AddDigits.cpp)
+### **Tóm tắt đề:**
+- Cho 1 số nguyên `n`, lặp lại việc cộng các thành phần cho đến khi được kết quả là số có 1 chữ số, và trả về kết quả đó.
+### **Ví dụ:**
+- Input: 38
+- Output: 2
+Giải thích: 38 -> 3 + 8 = 11 -> 1+1 = 2 -> trả về kết quả 2
+### **Hướng dẫn giải:**
+- Dùng 2 vòng lặp While lồng nhau:
+   - Vòng lặp ngoài cùng sẽ dừng khi `n` chỉ còn là số có 1 chữ số (0<=n<10) và sẽ lặp lại việc gán `n` bằng tổng các chữ số của chính nó
+   - Vòng lặp trong sẽ dùng để tính tổng số chữ số của số `n`, dừng lại khi `n`=0:
+      - Để tính tổng các chữ số của 1 số, tổng += số dư của số đó khi chia cho 10, sau mỗi lần tổng cộng dư thì chính số đó sẽ chia cho 10 (chia lấy phần nguyên), lặp lại cho đến khi số đó = 0.
+
 ## [389. Find the Diffirence](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/389_FindTheDiffirence.cpp)
 **Tóm tắt đề:**
 Cho 2 xâu s và t, xâu t được xây dựng bằng cách xáo trộn các ký tự
