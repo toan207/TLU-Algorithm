@@ -70,25 +70,5 @@ node tính từ nhánh `left` và `right` của X.
 node của cây nhị phân*).
 
 
-## [461. Hamming Distance](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/461_Hamming_Distance.cpp)
-**Tóm tắt đề:** 
-Khoảng cách `Hamming` giữa hai số nguyên là số vị trí các bit tương ứng khác nhau. 
-Cho hai số nguyên x và y, trả về khoảng cách `Hamming` giữa chúng.
 
-**Ví dụ:**
-
-|int|binary|
-|-|-|
-|1| 0 0 0 1|
-|4| 0 1 0 0|
-| | = ↑ = ↑|
-
-Vậy khoảng cách `Hamming` là 2.
-
-**Hướng dẫn giải:**
-- Tạo 2 xâu *S1* và *S2* để biểu diễn x và y dưới dạng nhị phân (nếu chiều dài 2 xâu không bằng nhau thì thêm các bit 0 vào bên trái của xâu ngắn hơn đến khi được 2 xâu dài bằng nhau)
-- Tạo biến *t* để lưu độ dài của hai xâu và biến *dem* = 0 để lưu lại kết quả
-- Bắt đầu một vòng lặp để kiểm tra từng phần tử hai xâu:
-  - Nếu phần tử của *S1* khác phần tử của *S2* thì tăng biến *dem* lên 1 đơn vị
-- Kết thúc vòng lặp, *dem* chính là khoảng cách `Hamming`.
  
