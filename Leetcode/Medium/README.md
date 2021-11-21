@@ -26,16 +26,16 @@ List_b để có được số *b*
 - Kết thúc duyệt, `ans` chính là head của *list* cần tìm
 
 https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/12_IntegertoRoman.cpp
-# [12.Integer to Roman](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/12_IntegertoRoman.cpp)
-## **Tóm tắt đề:**
+## [12.Integer to Roman](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/12_IntegertoRoman.cpp)
+**Tóm tắt đề:**
 - Nhập một số nguyên bất kỳ rồi chuyển thành số La Mã
 - Chữ số La Mã được thể hiện bằng bảy ký hiệu khác nhau: I, V, X, L, C, D và M.
 
-## **Ví dụ:**
+**Ví dụ:**
 - 2 được viết là II bằng số La Mã, chỉ là hai chữ cái được thêm vào với nhau. 12 được viết là XII, đơn giản là X + II. Con số 27 được viết là XXVII, là XX + V + II.
 - Chữ số La mã thường được viết từ lớn nhất đến nhỏ nhất từ ​​trái sang phải. Tuy nhiên, chữ số cho bốn không phải là IIII. Thay vào đó, số bốn được viết là IV. Bởi vì cái đứng trước năm, chúng ta trừ nó ra làm bốn. 
 
-## **Hướng dẫn giải:**
+**Hướng dẫn giải:**
 
 1.Quy tắc viết số la mã: 
     (1) Phải cộng trái trừ (IV 4, IX 9, XL 40, XC 90) 
