@@ -77,6 +77,18 @@ Nên các bạn phải chú ý các giá trị nhập vô mảng ( ͡° ͜ʖ ͡�
   - Nếu `Stack` rỗng tức là sau khi xét hết chuỗi, ta không còn ngoặc mở nào thừa thì ta sẽ trả về **true**.
   - Nếu `Stack` còn ngoặc mở, tức là sau khi xét hết chuỗi, ta vẫn còn dư các ngoặc mở mà không có ngoặc đóng thì ta sẽ trả về **false**.
 
+## [66. Plus One](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/66_PlusOne.cpp)
+### Tóm tắt đề:
+* Nhập vào mảng một dãy số: vd [1,2,3]
+* Thì in ra mảng sao cho giá trị của số trong mảng tăng thêm 1 đơn vị như 1 số tự nhiên ví dụ: 
+- [1,2,3] thì in ra [1,2,4]
+- [0] thì in ra [1]
+- [9,9,9] thì in ra [1,0,0,0]
+### **Hướng dẫn giải:**
+- B1: Kiểm tra xem số có phải nó có phải TH đặc biệt toàn số 9 không ?
+- B2: Nếu đúng thì chèn thêm số 0 vào cuối mảng bằng vector và số đầu tiên trong mảng chuyển thành 1. Chuyển các số 9 còn lại trong mảng thành số 0
+- B3: Nếu không phải TH đặc biệt thì kiểm tra xem số cuối cùng có phải số 9 hay ko
+- B4: Nếu không phải thì cộng thêm 1 nếu phải thì chuyển số 9 thành số 0 và dùng vòng lặp chạy ngược từ số cuối lên số đầu để check số đứng trước nó và lặp lại bước 4 để kiểm tra
 
 ## [69.Sqrt(x)](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/69_Sqrt.cpp)
 
