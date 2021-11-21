@@ -24,6 +24,38 @@ List_b để có được số *b*
   - `ans` sẽ bằng 1 *ListNode* mới với `val` = c[i] và `next` trỏ đến 
 `tmp`
 - Kết thúc duyệt, `ans` chính là head của *list* cần tìm
+
+https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/12_IntegertoRoman.cpp
+# [12.Integer to Roman](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/12_IntegertoRoman.cpp)
+## **Tóm tắt đề:**
+- Nhập một số nguyên bất kỳ rồi chuyển thành số La Mã
+- Chữ số La Mã được thể hiện bằng bảy ký hiệu khác nhau: I, V, X, L, C, D và M.
+
+## **Ví dụ:**
+- 2 được viết là II bằng số La Mã, chỉ là hai chữ cái được thêm vào với nhau. 12 được viết là XII, đơn giản là X + II. Con số 27 được viết là XXVII, là XX + V + II.
+- Chữ số La mã thường được viết từ lớn nhất đến nhỏ nhất từ ​​trái sang phải. Tuy nhiên, chữ số cho bốn không phải là IIII. Thay vào đó, số bốn được viết là IV. Bởi vì cái đứng trước năm, chúng ta trừ nó ra làm bốn. 
+
+## **Hướng dẫn giải:**
+
+1.Quy tắc viết số la mã: 
+    (1) Phải cộng trái trừ (IV 4, IX 9, XL 40, XC 90) 
+    (2) I X C M không được lặp lại quá 3lần
+    (3) V L D không được lặp lại trong 1 dãy số
+    (4) I trước chính nó hoặc X và V; X trước L và C; C trước D và M; M đầu dãy số
+    (5) Là tổng các kí tự tương ứng
+2.Làm 
+    - while nếu điều kiện còn đúng thực hiện vòng lặp-
+    (2) => 3000>n>1000, 300>n>100, 30>n>10 có thể biểu diễn bằng 3 kí tự liên tiếp giống nhau 
+        => dùng while cho 3 trường hợp (n>1000,>100,>10)    
+    - if chỉ thực hiện nếu điều kiện đúng-
+    (3)(4) => số như 900, 500, 400, 90, 50, 40, 9,5,4 dùng if vì có cách viết không được lăp lại
+    s kiểu string để lưu kí tự, s+= thêm vào bên phải xâu s 1 kí tự nếu thỏa mãn điều kiện
+    (5) => n-= là phép trừ n cho mỗi giá trị nếu điều kiện đúng 
+        
+    vd: n=234 (n>100) nên n-=100; s+='C';
+        => n=134 (n>100); s=C nên n-=100; s+='C'; 
+        => n=34; s=CC tiếp tục xét điều kiện đến khi n=0.  
+
 ## [222. Count Complete Tree Node](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/222_CountCompleteTreeNodes.cpp)
 **Tóm tắt đề:**
 Cho một con trỏ kiểu TreeNode là root của một
