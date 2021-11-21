@@ -1,6 +1,6 @@
 # Medium Problems - Code mẫu và giải thích
 
-## [2. Add Two Numbers](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/2_AddTwoNumbers.cpp)
+## [2. Add Two Numbers](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Medium/Code/2_AddTwoNumbers.cpp)
 **Tóm tắt đề:**
 Cho 2 *linked list* chứa các chữ số của 1 số theo thứ tự ngược lại
 (VD: `2->4->3` biểu diễn số 342). Hãy tìm *linked list* biểu diễn tổng của 
@@ -25,7 +25,7 @@ List_b để có được số *b*
 `tmp`
 - Kết thúc duyệt, `ans` chính là head của *list* cần tìm
 
-## [12.Integer to Roman](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/12_IntegertoRoman.cpp)
+## [12.Integer to Roman](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Medium/Code/12_IntegertoRoman.cpp)
 **Tóm tắt đề:**
 - Nhập một số nguyên bất kỳ rồi chuyển thành số La Mã
 - Chữ số La Mã được thể hiện bằng bảy ký hiệu khác nhau: I, V, X, L, C, D và M.
