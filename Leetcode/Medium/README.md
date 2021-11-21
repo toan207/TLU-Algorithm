@@ -25,7 +25,6 @@ List_b để có được số *b*
 `tmp`
 - Kết thúc duyệt, `ans` chính là head của *list* cần tìm
 
-https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/12_IntegertoRoman.cpp
 ## [12.Integer to Roman](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/12_IntegertoRoman.cpp)
 **Tóm tắt đề:**
 - Nhập một số nguyên bất kỳ rồi chuyển thành số La Mã
