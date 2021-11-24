@@ -114,6 +114,35 @@ VD2:
 4.	Nếu thỏa mãn bươc 3, ta gán biến `sqrt_v`= `i` - 1;  kết thúc vòng lặp và trả ra giá trị `sqrt_v`.
 
 
+## [119. Pascal's Triangle II](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/119_PascalsTriangleII.cpp)
+
+### **Tóm tắt đề:**
+*	Cho một số nguyên `rowIndex`, trả về các hàng `rowIndexth` của tam giác Pascal.
+*	Lưu ý: Trong tam giác Pascal, mỗi số là tổng của hai số ngay trên nó.
+*	 Xem hình tại đây để hiểu rõ đề bài hơn: https://leetcode.com/problems/pascals-triangle-ii/
+
+### **Ví dụ:**
+VD1:
+*	Input: ` rowIndex` = 3
+*	Output: [1,3,3,1]
+
+VD2:
+*	Input: `rowIndex` = 0
+*	Output: [1]
+
+VD3:
+*	Input: `rowIndex` = 1
+*	Output: [1,1]
+
+
+### **Hướng dẫn giải:**
+1. 	Ta nhận thấy  mỗi số ( trừ `a[0][0]`; `a[0][1]`; `a[1][1]`) đều được tạo thành bằng cách sau: `a[ i ] [ j ]` = `a[i – 1][ j – 1]` + `a[i – 1][ j ]`
+2.	Trước hết, ta khởi tạo các số: `a[0][0]=1`; `a[0][1]=1` ;`a[1][1]=1`.
+3.	Dùng 2 vòng lặp `for` để duyệt các phần tử.
+*** Lưu ý: khi duyệt hàng cần thêm phần tử `a[i][0]=1` vào đầu và `a[i][i]=1` vào cuối ***
+4.	Dùng `push_back` để thêm phần tử vào mảng và trả ra giá trị
+
+
 ## [258. Add Digits](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/258_AddDigits.cpp)
 ### **Tóm tắt đề:**
 - Cho 1 số nguyên `n`, lặp lại việc cộng các thành phần cho đến khi được kết quả là số có 1 chữ số, và trả về kết quả đó.
