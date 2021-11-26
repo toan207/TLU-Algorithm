@@ -142,6 +142,23 @@ VD3:
 *** Lưu ý: khi duyệt hàng cần thêm phần tử `a[i][0]=1` vào đầu và `a[i][i]=1` vào cuối ***
 4.	Dùng `push_back` để thêm phần tử vào mảng và trả ra giá trị
 
+## [171. Roman to Integer]()
+## **Tóm tắt đề bài**
+- Nhập vào một chuỗi các kí tự bao gồm các chữ cái Latinh in hoa
+- Chuỗi có độ dài từ 1 đến 7 chữ cái **(A bắt đầu từ 1,AA là 28)**
+
+## **Ví dụ**
+- Đầu vào : *"A"*, hiện kết quả là *1*
+- Đầu vào : *"AC"*, hiện kết quả là *29*
+
+## **Hướng giải quyết :**
+
+- Khởi tạo mảng lưu kí tự gồm các chữ cái in hoa từ **A đến Z**
+- Khởi tạo biến *result* lưu kết quả cần in ra
+- - Ta nhận thấy những chuỗi có 1 kí từ thì sẽ cho ra kết quả từ **[1;26]**, 2 kí từ thì cho kết quả từ **[27;702]**,...
+- Từ trên ta rút được công thức tổng quát của cấp số nhân lùi : 26^(d-1)*(*a* - 'A' + 1) với công bội d=-1; *(Trong đó d là độ dài chuỗi, a là vị trí của 1 từ trong bảng mã ASCII)*
+- Sử dụng vòng lặp để thực hiện tính toán
+
 
 ## [258. Add Digits](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/258_AddDigits.cpp)
 ### **Tóm tắt đề:**
