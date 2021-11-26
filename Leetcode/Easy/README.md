@@ -173,6 +173,28 @@ Giải thích: 38 -> 3 + 8 = 11 -> 1+1 = 2 -> trả về kết quả 2
    - Vòng lặp trong sẽ dùng để tính tổng số chữ số của số `n`, dừng lại khi `n`=0:
       - Để tính tổng các chữ số của 1 số, tổng += số dư của số đó khi chia cho 10, sau mỗi lần tổng cộng dư thì chính số đó sẽ chia cho 10 (chia lấy phần nguyên), lặp lại cho đến khi số đó = 0.
 
+
+## [338. Counting Bits](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/338_CountingBits.cpp)
+### **Tóm tắt đề:**
+- Cho một số nguyên `n`, trả về mảng `ans` có độ dài `n+1` với `i (0 <= i <= n)`, `ans[i]` là số bit 1 khi biểu diễn nhị phân của `i`.
+### **Ví dụ:**
+- Ví dụ 1:
+   - Input: n=2
+   - Output: \[0,1,1\]
+   - Explanation: 0 -> 0; 1 -> 1; 2 -> 10
+- Ví dụ 2:
+   - Input: n=5
+   - Output: \[0,1,1,2,1,2\]
+   - Explaination: 0 -> 0; 1 -> 1; 2 -> 10; 3 -> 11; 4 -> 100; 5 -> 101
+### **Hướng dẫn giải:**
+- Khởi tạo `i = 0`, tạo 1 vector `v` để lưu các giá trị đếm được
+- Trong khi `i <= n`:
+   - Tạo 1 biến trung gian `t = i` và 1 biến đếm `d`
+   - Trong khi `t != 0`, dần dần dịch bit của t sang phải 1, nếu gặp số 1 ở cuối dãy bit thì `d++`, nếu không thì tiếp tục dịch cho đến khi `t==0`
+   - Thêm `d` vào vector `v` và tăng `i` lên 1 rồi lặp lại các việc trên đến khi `i > n`
+- Trả về vector `v` sau khi đã thêm các phần tử
+
+
 ## [389. Find the Diffirence](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/389_FindTheDiffirence.cpp)
 **Tóm tắt đề:**
 Cho 2 xâu s và t, xâu t được xây dựng bằng cách xáo trộn các ký tự
