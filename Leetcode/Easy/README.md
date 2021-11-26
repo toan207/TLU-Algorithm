@@ -142,7 +142,7 @@ VD3:
 *** Lưu ý: khi duyệt hàng cần thêm phần tử `a[i][0]=1` vào đầu và `a[i][i]=1` vào cuối ***
 4.	Dùng `push_back` để thêm phần tử vào mảng và trả ra giá trị
 
-## [171. Roman to Integer]()
+## [171. Roman to Integer](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/171_ExcelSheetColumnNumber.cpp)
 ## **Tóm tắt đề bài**
 - Nhập vào một chuỗi các kí tự bao gồm các chữ cái Latinh in hoa
 - Chuỗi có độ dài từ 1 đến 7 chữ cái **(A bắt đầu từ 1,AA là 28)**
