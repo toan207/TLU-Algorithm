@@ -19,6 +19,36 @@ Nên các bạn phải chú ý các giá trị nhập vô mảng ( ͡° ͜ʖ ͡�
 4. Sau đó in ra cặp 1 thuộc vector "v".
 
 
+## [8. String to Integer (atoi)](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/8_StringToInteger.cpp)
+### **Tóm tắt đề:**
+#### **Chuyển đổi từ dạng string sang dạng integer**
+- Cho 1 chuỗi, chuyển chuỗi đó sang dạng số nguyên int
+- Bỏ qua khoảng trắng (dấu cách), chỉ chuyển số đầu tiên. VD: `  12   891` sẽ chỉ trả về số `12`.
+- Kiểm tra dấu trước ngay trước số (viết liền) là âm hay dương, chỉ 1 dấu duy nhất, nếu nhiều hơn trả về `0`.
+- Không chấp nhận chữ đứng trước dấu và số. VD: `  a -12` không chấp nhận, trả về `0` ; `-12 a` thì thoả mãn, trả về `-12`.
+- Nếu số nguyên đó lớn hơn INT_MAX, trả về INT_MAX; nhỏ hơn INT_MIN, trả về INT_MIN.
+- Trả về kết quả cuối cùng.
+### **Ví dụ:**
+- `+42` hoặc `42` trả về 42
+- `+ 42` trả về `0`. Vì `+` không đứng liền với `42`
+- `++42` , `--42` , `---42` trả về `0` vì có nhiều hơn 1 dấu.
+- `-41aaa` trả về `-41`
+- `aaa42` trả về `0`
+- `+00777 111` trả về `777`
+- `981291281281212` trả về `2147483647` (INT_MAX) 
+- `-981 +291 281 281 212` trả về `-981`
+  
+### **Hướng dẫn giải:**
+  - Cần tìm dấu, vị trí đầu tiên có chữ số xuất hiện và vị trí cuối cùng.
+  - Nếu không có dấu thì mặc định là số nguyên dương.
+  - Vị trí cuối kết thúc nếu vị trí tiếp theo không phải là số trong dạng string. Từ `0` đến `9` trong bảng mã ASCII là từ `48` đến `57`.
+  - Nếu các điều kiện không thoả mãn đề bài `return 0` .
+  - Xem từ vị trí đầu đến vị trí cuối có bao nhiêu số, nếu lớn hơn 11 tức vượt quá dạng int thì kết hợp xét dấu và trả về giá trị tương ứng.
+  - Xét xem có số `0` phía trước không, nếu có thì xoá bớt, tránh lặp thừa không cần thiết, mỗi lần xoá thì độ dài và vị trí kết thúc sẽ giảm 1.
+  - Sau khi kiểm tra xong, dùng vòng lặp xét từ vị trí đầu đến vị trí kết thúc để chuyển sang dạng int. Trong quá trình lặp, nếu overflow thì trả về INT_MAX hoặc INT_MIN, tuỳ vào dấu như thế nào.
+  - Sau vòng lặp, xét dấu và trả về giá trị sau khi biến đỔi.
+
+
 ## [9. Palindrome Number](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/9_PalindromeNumber.cpp)
 ### **Tóm tắt đề:**
 - Cho 1 số nguyên, trả về True nếu số đó là số palindrome; False nếu không phải số palindrome.
