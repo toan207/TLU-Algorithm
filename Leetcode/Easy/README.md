@@ -300,4 +300,46 @@ Vậy khoảng cách `Hamming` là 2.
 * Cách 2:
   - Khai báo biến count để đếm số âm và biến count1 để đếm số chữ số 0 
   - Dùng vòng lặp để đếm số âm và số 0
-  - Dùng câu lệnh rẽ nhánh để kiểm tra và trả về kết quá 
+  - Dùng câu lệnh rẽ nhánh để kiểm tra và trả về kết quá
+
+## [1394. Find Lucky Integer in Array](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1394_FindLuckyIntegerInAnArray.cpp)
+### **Tóm tắt đề:**
+Nhập vào một dãy số trong mảng tìm và in ra số lucky lớn nhất nếu không có in ra -1
+Một số được cho là số lucky khi số lần nó xuất hiện trong mảng bằng chính giá trị của nó
+### **Ví dụ:**
+* 	`Input: [2.2.3]`		* `output: 2`
+*	`Intput[1]`			* `output: 1 `
+*	`Intput[1,2,2,3,3,3]`	* `output: 3` (vì 3 là số lucky lớn nhất)
+*	`Intput[2,2,2,3,3]`	* `output: -1` (vì không có số lucky)
+### Hướng dẫn làm:
+* 	B1: Khởi tạo `vector` để lưu các số lucky, tạo 1 biến `dem` để đếm số lần xuất hiện của số trong mảng
+* 	B2: Nếu `số i` xuất hiện quá lần lập tức biến tất cả các `số i` còn lại trong mảng thành số `0`
+* 	B3: Tìm số `lucky i` lớn nhất trong vector nếu có gán `max = i` nếu không có số lucky gán `max = -1`
+
+## [1952. Three Divisors](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1952_ThreeDivisors.cpp)
+
+### **Tóm tắt đề:**
+*	Cho một số nguyên n, trả ra `true` nếu n có chính xác 3 ước nguyên dương; còn lại trả ra `false`.
+
+### **Ví dụ:**
+VD1:
+* 	Input: n = 2
+*	Output: false
+*	Giải thích: 2 chỉ có 2 ước dương: 1 và 2.
+VD2:
+*	Input: n = 4
+*	Output: true
+*	Giải thích: 4 có 3 ước nguyên dương: 1, 2,và 4.
+
+### **Hướng dẫn giải:**
+####  Cách 1:
+1. Dùng biến `dem` để đếm số ước thuộc nửa đoạn [2,n)<br>
+2. Nếu `dem`=1, trả ra `true` (tính cả 1 và n sẽ đủ 3 ước)
+
+####  Cách 2: (nhanh hơn)
+* Ta nhận thấy số có đúng 3 ước dương  là bình phương của một số nguyên tố p (3 ước là 1,p,n)
+1.	Số `1` là số đặc biệt ta sẽ loại bỏ nó trước.
+2.	Nếu `sqrt(n)` không là số tự nhiên ta cũng sẽ loại.
+3.	Dùng vòng lặp kiểm tra xem `sqrt(n)` có phải số nguyên tố không; nếu có trả ra `true`, nếu không trả ra `false`.
+
+
