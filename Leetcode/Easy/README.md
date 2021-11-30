@@ -316,6 +316,22 @@ Một số được cho là số lucky khi số lần nó xuất hiện trong m�
 * 	B2: Nếu `số i` xuất hiện quá lần lập tức biến tất cả các `số i` còn lại trong mảng thành số `0`
 * 	B3: Tìm số `lucky i` lớn nhất trong vector nếu có gán `max = i` nếu không có số lucky gán `max = -1`
 
+
+## [1859. Sorting the Sentence](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1859_SortingtheSentence.cpp)
+### **Tóm tắt đề:** 
+Câu là một danh sách các từ được phân tách bằng một dấu cách không có dấu cách ở đầu hoặc cuối. Mỗi từ bao gồm các chữ cái tiếng Anh viết thường và viết hoa.
+Một câu có thể được xáo trộn bằng cách thêm vị trí của 1 từ vào mỗi từ sau đó sắp xếp lại các từ trong câu.
+Đưa ra một câu đã xáo trộn `s` chứa không quá 9 từ, hãy tạo lại và trả lại câu ban đầu.
+### **Ví dụ:**
+- Input: s = "is2 sentence4 This1 a3"
+- Output: "This is a sentence"
+-Input: s = "Myself2 Me1 I4 and3"
+-Output: "Me Myself and I"
+### **Hướng dẫn giải:**
+- Tạo 1 vector `v` gồm 10 phần tử để lưu lại các từ trong xâu `s` ở đúng vị trí của nó
+- Chạy từ đầu `s` cho đến khi gặp 1 chữ số (tức là đã hết 1 từ) thì dừng lại và thêm từ đó vào vector v tại vị trí `i` (gán `v[i]` = từ muốn thêm, `i` chính là chữ số biểu thị vị trí của từ). Sau khi thêm, bỏ qua số và dấu cách để đến từ tiếp theo rồi lặp lại việc thêm cho đến hết xâu `s`.
+*(Cách làm các bước được chỉ rõ hơn trong code)*
+
 ## [1952. Three Divisors](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1952_ThreeDivisors.cpp)
 
 ### **Tóm tắt đề:**
