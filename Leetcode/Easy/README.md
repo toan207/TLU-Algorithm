@@ -284,6 +284,29 @@ Vậy khoảng cách `Hamming` là 2.
   - Ngược lại, lặp lại các bước trên (đến khi `n`=0)
   - Nếu vòng lặp kết thúc khi `n`=0 và `t1` không bằng `t2` thì trả về `true`
 
+## [728. Self Dividing Numbers](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/728_SelfDividingNumbers.cpp)
+
+### **Tóm tắt đề:**
+*	A self-dividing number (Số tự chia) là số chia hết cho mọi chữ số trong nó. VD: 128 là số tự chia vì `128%1==0`, `128%2==0`, `128%8==0`.
+*	Một số tự chia không được phép chứa chữ số 0
+*	Cho trước hai số nguyên `left` và `right`, trả về danh sách tất cả các số tự chia trong phạm vi `[left, right]`.
+
+### **Ví dụ:**
+1.	VD1:
+*	Input: left = 1, right = 22
+*	Output: [1,2,3,4,5,6,7,8,9,11,12,15,22]
+2.	VD2:
+* 	left = 47, right = 85
+* 	Output: [48,55,66,77]
+
+### **Hướng dẫn giải:**
+1.	Dùng 1 vòng lặp `for` để duyệt các phần tử `i` từ `left` đến `right`
+2.	Dùng vòng lặp `while` trong vòng lặp `for` ở bước 1 để lấy các chữ số của từng phần tử `i`
+3.	Nếu `chuso`= 0 thì như đề bài số này không thỏa mãn; nếu phần tử `i` không chia hết cho `chuso` trả ra `false`
+4.	Sau cùng nếu `i` thỏa mãn số tự chia, thêm phần tử i vào vector `v` 
+
+
+
 ## [1822. Sign of the Product of an Array](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1882_SignOfTheProductOfAnArray.cpp)
 **Tóm tắt đề**:
 - Nhập vào một dãy số rồi tính tích của tất cả các số gọi là X
