@@ -190,6 +190,24 @@ VD3:
 - Sử dụng vòng lặp để thực hiện tính toán
 
 
+## [202. Happy Number](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/202_HappyNumber.cpp)
+### **Tóm tắt đề:**
+Nhập vào một số và kiểm tra xem số đó có phải là số `happy` hay không
+Số `happy` là một số khi thực hiện vòng lặp lấy tổng  của bình phương  các chữ số đã nhập cộng vào và tạo thành 1 số mới cũng sẽ lặp lại vòng lặp đấy cho đến khi nó ra số 1 thì nó chính là số `happy` còn không phải thì vòng lặp sẽ vô tận
+### **Ví dụ:**
+* `input: 19` <br>	`output: true` <br>
+- ` Giải thích: 19` <br>
+1^2 + 9^2 = 82 <br>
+8^2 + 2^2 = 68 <br>
+6^2 + 8^2 = 100 <br>
+1^2 + 0^2 + 0^2 = 1
+* `input: 3`<br> `output: false`
+### Hướng dẫn làm:
+- B1: Ta thử bấm máy sẽ thấy các số bé hơn 10 như 2,3,4,5,6,8,9 thực hiện vòng lặp 1 lúc thì sẽ đều quay về chính số 4 vậy chúng ta sẽ để vòng lặp dừng lại khi số đấy nhỏ hơn 5
+- B2: Đầu tiên ta sẽ chia lấy dư các số để tính tổng bình phương các số chữ số trong số `n` và sau khi cộng xong ta sẽ gán biến `n = c` để tiếp tục vòng lặp tìm số `happy` 
+
+
+
 ## [258. Add Digits](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/258_AddDigits.cpp)
 ### **Tóm tắt đề:**
 - Cho 1 số nguyên `n`, lặp lại việc cộng các thành phần cho đến khi được kết quả là số có 1 chữ số, và trả về kết quả đó.
