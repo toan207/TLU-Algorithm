@@ -323,7 +323,59 @@ Vậy khoảng cách `Hamming` là 2.
 3.	Nếu `chuso`= 0 thì như đề bài số này không thỏa mãn; nếu phần tử `i` không chia hết cho `chuso` trả ra `false`
 4.	Sau cùng nếu `i` thỏa mãn số tự chia, thêm phần tử i vào vector `v` 
 
+## [896. Monotonic Array](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/896_MonotonicArray.cpp)
 
+### Tóm tắt đề bài
+- Nhập vào một dãy kiểm tra xem dãy đó có đơn điệu hay không ? Nếu có trả về true, trả về false nếu ngược lại!
+### Ví dụ
+- input : `[1,2,3,4,5]` -> output: `true`
+- output : `[1,2,3,5,4]` -> output : `false`
+
+### Điều kiện
+- `1 <= nums.length <= 105` 
+- `105 <= nums[i] <= 105`
+
+### Hướng giải quyết
+- Tạo mảng lưu các kí tự cần nhập gồm **n** phần tử
+- Ta nhận thấy nếu đơn điệu thì số phần từ cùng đơn điệu sẽ **=** số phần tử nhập vào
+- Tạo biến đếm cho từng trường hợp
+- Sau đó tạo vòng for để so sánh các giá trị trong mảng để cộng các biến đếm vừa tạo
+- Nếu biến đếm **=** số lượng phần tử thì xuất ra màn hình `true`, và hiện `false` nếu ngược lại
+
+## [1295. Find Numbers with Even Number of Digits](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1295_FindNumberswithEvenNumberofDigits.cpp)
+
+### Tóm tắt đề bài
+- Nhập vào một dãy kiểm tra xem dãy đó có số nào có **số các chữ số là chẵn**. Nếu có trả về số lượng !
+### Ví dụ
+- input : `[12,345,2,6,7896]` -> output: `2`
+- output : `[555,901,482,1771]` -> output : `1`
+
+### Điều kiện
+- `1 <= nums.length <= 500` 
+- `1 <= nums[i] <= 105`
+
+### Hướng giải quyết
+- Tạo mảng lưu các kí tự cần nhập gồm **n** phần tử
+- Tạo biến đếm `1` để đếm số lượng phần tử thoả mãn đều bài
+- Taọ vòng lặp thực hiện tính toán
+- Tạo biến đếm `2` qua trường hợp
+- Tạo vòng lặp để tính *số chữ số của số đó* ,nếu `2` chia hết cho 2 thì biến đếm `1` cộng thêm 1.
+- Hiện biến `1` ra màn hình ta thu được kết quả.
+  
+
+## [1394. Find Lucky Integer in Array](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1394_FindLuckyIntegerInAnArray.cpp)
+### **Tóm tắt đề:**
+Nhập vào một dãy số trong mảng tìm và in ra số lucky lớn nhất nếu không có in ra -1
+Một số được cho là số lucky khi số lần nó xuất hiện trong mảng bằng chính giá trị của nó
+### **Ví dụ:**
+* 	`Input: [2.2.3]`		* `output: 2`
+*	`Intput[1]`			* `output: 1 `
+*	`Intput[1,2,2,3,3,3]`	* `output: 3` (vì 3 là số lucky lớn nhất)
+*	`Intput[2,2,2,3,3]`	* `output: -1` (vì không có số lucky)
+### Hướng dẫn làm:
+* 	B1: Khởi tạo `vector` để lưu các số lucky, tạo 1 biến `dem` để đếm số lần xuất hiện của số trong mảng
+* 	B2: Nếu `số i` xuất hiện quá lần lập tức biến tất cả các `số i` còn lại trong mảng thành số `0`
+* 	B3: Tìm số `lucky i` lớn nhất trong vector nếu có gán `max = i` nếu không có số lucky gán `max = -1`
 
 ## [1822. Sign of the Product of an Array](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1882_SignOfTheProductOfAnArray.cpp)
 **Tóm tắt đề**:
@@ -342,20 +394,6 @@ Vậy khoảng cách `Hamming` là 2.
   - Khai báo biến count để đếm số âm và biến count1 để đếm số chữ số 0 
   - Dùng vòng lặp để đếm số âm và số 0
   - Dùng câu lệnh rẽ nhánh để kiểm tra và trả về kết quá
-
-## [1394. Find Lucky Integer in Array](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1394_FindLuckyIntegerInAnArray.cpp)
-### **Tóm tắt đề:**
-Nhập vào một dãy số trong mảng tìm và in ra số lucky lớn nhất nếu không có in ra -1
-Một số được cho là số lucky khi số lần nó xuất hiện trong mảng bằng chính giá trị của nó
-### **Ví dụ:**
-* 	`Input: [2.2.3]`		* `output: 2`
-*	`Intput[1]`			* `output: 1 `
-*	`Intput[1,2,2,3,3,3]`	* `output: 3` (vì 3 là số lucky lớn nhất)
-*	`Intput[2,2,2,3,3]`	* `output: -1` (vì không có số lucky)
-### Hướng dẫn làm:
-* 	B1: Khởi tạo `vector` để lưu các số lucky, tạo 1 biến `dem` để đếm số lần xuất hiện của số trong mảng
-* 	B2: Nếu `số i` xuất hiện quá lần lập tức biến tất cả các `số i` còn lại trong mảng thành số `0`
-* 	B3: Tìm số `lucky i` lớn nhất trong vector nếu có gán `max = i` nếu không có số lucky gán `max = -1`
 
 
 ## [1859. Sorting the Sentence](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/1859_SortingtheSentence.cpp)
