@@ -25,6 +25,26 @@ List_b để có được số *b*
 `tmp`
 - Kết thúc duyệt, `ans` chính là head của *list* cần tìm
 
+## [7. Reverse Integer](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Medium/Code/7_ReverseInteger.cpp)
+### **Tóm tắt đề:**
+#### **Tìm số đảo ngược của số nguyên kiểu integer**
+- Cho một số nguyên kiểu `int`: `x`, tìm số đảo ngược của `x`
+- Nếu quá giới hạn kiểu `int`, trả về `0`
+
+### **Ví dụ:**
+
+- `1412` đảo ngược là `2141`
+- `-69` đảo ngược là `-96`
+- `0012` đảo ngược là `21`
+- `8281972920121` quá `INT_MAX`, trả về `0`
+  
+### **Hướng dẫn giải:**
+- Tạo 1 biến lưu giá trị số đảo ngược `n`, khởi tạo giá trị = `0`
+- Sử dụng vòng lặp, `n` sẽ tăng gấp 10 lần và cộng với phần dư
+- Do số cần đảo ngược ở dạng `int` nên khi chia đến phần nguyên là `0`, dừng vòng lặp.
+- Sau vòng lặp ta sẽ cos `n` là số đảo ngược của số ban đầu 
+- Nếu quá giới hạn kiểu `int`, trả về `0`
+
 ## [12.Integer to Roman](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Medium/Code/12_IntegertoRoman.cpp)
 **Tóm tắt đề:**
 - Nhập một số nguyên bất kỳ rồi chuyển thành số La Mã
