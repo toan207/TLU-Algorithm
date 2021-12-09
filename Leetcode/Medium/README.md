@@ -75,6 +75,44 @@ List_b để có được số *b*
         => n=134 (n>100); s=C nên n-=100; s+='C'; 
         => n=34; s=CC tiếp tục xét điều kiện đến khi n=0.  
 
+## [62. Unique Paths](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Medium/Code/62_UniquePaths.cpp)
+
+### **Tóm tắt đề:**
+*	Robot được đặt ở góc trên bên trái của lưới `m x n` (đánh dấu là ‘Start’)
+*	Robot chỉ có thể di chuyển xuống hoặc sang phải.
+*	Robot cần tiếp cận góc dưới cùng bên phải của lưới (đánh dấu là ‘Finish’)
+*	Có bao nhiêu con đường có thể có?
+
+### **Ví dụ:**
+#### 1. VD1:
+![markdown]( https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
+*	Input: m = 3, n = 7
+*	Output: 28
+
+#### 2. VD2:
+*	Input: m = 3, n = 2
+*	Output: 3
+*	Giải thích: Có 3 cách như sau:
+   - Phải -> Xuống -> Xuống
+   - Xuống ->Xuống -> Phải
+   - Xuống ->Phải -> Xuống
+### **Hướng dẫn giải:**
+
+#### 1. Để đi hết `m` ô theo chiều dọc ta cần đi `m – 1` bước; đi hết `n` ô theo chiều ngang cần `n - 1` bước.
+#### 2.	Ta coi việc đi sang phải là `1`, đi xuống dưới là `0`.
+#### 3.	Mặt khác, muốn tới đích ta bắt buộc phải đi sang phải `k`=`n - 1` bước, ta có biểu diễn: `a1`+`a2`+`a3`+…+`ah`=`k` .
+*	Với `h`=`m - 1`+`n - 1`là tổng số bước phải đi
+*	`ai` là lựa chọn `1` hoặc `0` (sang phải hoặc xuống dưới))
+#### 4.	Như vậy, ta chỉ việc lựa chọn k số từ h số để `ai`=1, số cách chọn sẽ là hCk (tổ hợp chập k của h).
+#### 5.VD: `m` = 3, `n` = 7
+*	Có `k` = 6, `h` = 8
+*	`a1`+`a2`+`a3`+…+`a8`=`6`
+*	Chọn 6 số từ 8 số để `ai`=1 có 8C6 = 28 cách chọn.
+* 	Một lưu ý nữa là ta thấy 8C6 = 8C2, mà việc tính 8C2 bớt tốn thời gian hơn, nên thay vì gán `k`=`n - 1` như ở bước 3, ta sẽ gán `k`= `min(n,m)-1`.
+
+
+
+
 ## [222. Count Complete Tree Node](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Easy/Code/222_CountCompleteTreeNodes.cpp)
 **Tóm tắt đề:**
 Cho một con trỏ kiểu TreeNode là root của một
@@ -88,6 +126,22 @@ node tính từ nhánh `left` và `right` của X.
 - Sử dụng công thức trên, gọi đệ quy bắt đầu từ node `root`
 - Kết thúc đệ quy, hàm sẽ trả về số node tính từ `root` (*tổng số
 node của cây nhị phân*).
+
+
+## [260. Single Number III](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Medium/Code/260_SingleNumber_III.cpp)
+
+### **Tóm tắt đề:**
+* Cho một dãy số trong mảng và trong này luôn có 2 số xuất hiện 1 lần và các số còn lại sẽ xuất hiện đúng 2 lần (` hiểu là nếu mảng chỉ có 2 số thì luôn là 2 số xuất hiện 1 lần) .Tìm và in ra 2 số chỉ xuất hiện 1 lần 
+* Bài yêu cầu viết với thời gian xử lý chương trình nhanh ( hiểu là dùng 1 vòng lặp là nhiều nhất`)
+### **Ví dụ:**
+`* Input: [1,2,1,3,2,5] `		`* Output: [3,5] hoặc [5,3] đều được`
+`* Input: [-1,0]`			`* Output:[-1,0] hoặc [0,-1] đều được`
+### Hướng dẫn làm:
+* B1: Tạo 1 `vector` để lưu lại cặp số xuất hiện chỉ 1 lần
+* B2: Sắp xếp lại mảng `nums` tăng dần rồi kiểm tra nếu số đầu tiên hoặc số cuối cùng khác với số ngay sau nó thì đẩy vào trong `vector`
+* B3: Dùng 1 vòng lặp `for` để kiểm tra số xuất hiện 1 lần bằng cách so sánh với số đằng trước và đằng sau nó(lưu ý vòng lặp chỉ chạy từ `1` đến  `nums.size() -1`
+
+
 
 
 
