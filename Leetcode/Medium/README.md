@@ -91,4 +91,29 @@ node của cây nhị phân*).
 
 
 
+## [869. Reordered Power of 2](https://github.com/toan207/TLU-Algorithm/blob/main/Leetcode/Medium/Code/869_ReorderedPowerof2.cpp)
+### **Tóm tắt đề:**
+- Nhập vào 1 số nguyên n. Sắp xếp lại các chữ số theo bất kì thứ tự nào (bao gồm cả thứ tự ban đầu), sao cho chữ số hàng đầu không phải chữ số 0.
+- Trả về `true` khi và chỉ khi có thể sắp xếp số đó thành 1 số có thể viết dưới dạng 2^n
+### **Ví dụ:**
+- Input: n = 1
+  - Output: true
+- Input: n = 10
+  - Output: false
+- Input: n = 16
+  - Output: true
+- Input: n = 24
+  - Output: false
+- Input: n = 46
+  - Output: true
+### **Hướng dẫn giải:**
+- Ý tưởng: sắp xếp *các chữ số* của `n` và các số có dạng 2^i theo cùng 1 trình tự, sau đó kiểm tra xem `n` có giống với số có dạng 2^i không (ví dụ: 2401 -> 0124 và 2^10 = 1024 -> 0124 => 2401 true)
+- Tạo 1 vector string `power` để lưu các số có dạng 2^i (`i` chạy từ 0 đến 30 (giới hạn của đề bài chỉ cần thế là đủ) )
+- Sắp xếp lại các kí tự của chuỗi trong vector vừa lưu (ví dụ: [1024,2048] -> [0124,0248])
+- Chuyển `n` từ kiểu `int` sang kiểu `string` và sắp xếp lại các kí tự của `n`
+- Tìm `n` sau khi đã sắp xếp trong vector `power`, nếu có trả về `true`, ngược lại tiếp tục chạy cho đến hết, nếu không tồn tại thì trả về `false`
+
+
+
+
  
