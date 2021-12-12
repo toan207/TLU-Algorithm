@@ -11,8 +11,11 @@ int main() {
     for(int i=0; i<s.length(); i++) {
         if(s[i] == ch) v.push_back(i);
     }
-
-    for(int k: v) cout << k << " ";
+    
+    if(v.size()==0) cout << -1 << endl;
+    else {
+        for(int k: v) cout << k << " ";
+    }
 
     return 0;
 }
