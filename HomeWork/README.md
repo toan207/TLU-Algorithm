@@ -1,5 +1,6 @@
 # HOME WORK SOLUTION
 ### Tuần 1
+- [Bài 1](https://github.com/toan207/TLU-Algorithm/blob/main/HomeWork/src/Tuan_1/bai1.cc)
 - [Bài 3](https://github.com/toan207/TLU-Algorithm/blob/main/HomeWork/src/Tuan_1/bai3.cc)
 - [Bài 4](https://github.com/toan207/TLU-Algorithm/blob/main/HomeWork/src/Tuan_1/bai4.cc)
 - [Bài 5 - Cách 1](https://github.com/toan207/TLU-Algorithm/blob/main/HomeWork/src/Tuan_1/bai5.1.cc)
