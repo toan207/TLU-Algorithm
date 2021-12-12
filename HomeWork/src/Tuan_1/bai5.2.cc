@@ -3,7 +3,7 @@
     Tìm tất cả các bộ 3 số trong mảng có tổng bằng 0 
     (mỗi bộ 3 in trên 1 dòng, thử nghĩ cách làm ít hơn 3 vòng lặp lồng nhau)
 	Input: 	-1,0,1,2,-1,-4
-	Output: 	-1  -1  2
+	Output: -1  -1  2
                 -1   0  1
 */
 #include <bits/stdc++.h>
