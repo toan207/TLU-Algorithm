@@ -12,7 +12,7 @@ int main() {
         if(s[i] == ch) v.push_back(i);
     }
     
-    if(v.size()==0) cout << -1 << endl;
+    if(v.size()==0) cout << -1 << endl; // có thể thay v.size==0 bằng v.empty()
     else {
         for(int k: v) cout << k << " ";
     }
