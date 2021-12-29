@@ -27,3 +27,14 @@
 - [Bài 9](https://github.com/toan207/TLU-Algorithm/blob/main/HomeWork/src/Tuan2/bai9.cpp)
 - [Bài 10](https://github.com/toan207/TLU-Algorithm/blob/main/HomeWork/src/Tuan2/bai10.cpp)
 - [Bài 11](https://github.com/toan207/TLU-Algorithm/blob/main/HomeWork/src/Tuan2/bai11.cpp)
+
+### Tuần 3
+- [Tính diện tích]()
+- [Số lần nhảy dòng]()
+- [Ngày trong năm]()
+- [Tiêu diệt yêu quái]()
+- [Viết hoa]()
+- [Chữ số 0 cuối cùng]()
+- [Chiếc dép bị thiếu]()
+- [Ước chung lớn nhất (thuật toán Euclid)]()
+- [Chênh lệch lớn nhất]()
